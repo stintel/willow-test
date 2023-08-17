@@ -18,6 +18,7 @@ jobs:
     outputs:
       json: ${{ steps.metadata.outputs.json }}
     permissions:
+      contents: read
       packages: write
     steps:
       - name: checkout
